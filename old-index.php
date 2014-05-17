@@ -110,12 +110,12 @@ if ($activitieshandle) {
 <table>
 <tr>
 <td>
-<h2>Remininisce the Moment</h2>
+<h2><a href="/PosterPolaroids.jpg">Remininisce the Moment</a></h2>
 <br />
 Date: June 14, 2014 (Saturday)
 <br />
 <br />
-Time: 7:30PM
+Time: 7:00PM
 <br />
 <br />
 Place: San Gabriel High School Auditorium
