@@ -120,13 +120,13 @@ Time: 7:00PM
 <br />
 Place: San Gabriel High School Auditorium
 <br />
-801 S. Ramon Street, San Gabriel, CA 91776
+801 S. Ramona Street, San Gabriel, CA 91776
 <br />
 <br />
 Contact number: 626-975-3152, 909-275-4088
 <br />
 <br />
-EMail Address: info@aatf.us
+Email Address: info@aatf.us
 </td>
 </tr>
 </table>
