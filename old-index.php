@@ -106,40 +106,30 @@ if ($activitieshandle) {
 </td>
 </tr>
 </table>
-<!--<h3>Upcoming Performance</h3>
+<h3>Upcoming Performance</h3>
 <table>
 <tr>
 <td>
-<h2>10th Anniversary Grand Dance Festival</h2>
+<h2>Remininisce the Moment</h2>
 <br />
-Date: June 15, 2013 (Saturday)
+Date: June 14, 2014 (Saturday)
 <br />
 <br />
 Time: 7:30PM
 <br />
 <br />
-Place: SAN GABRIEL MISSION PLAYHOUSE
+Place: San Gabriel High School Auditorium
 <br />
-320 S. Mission Dr., San Gabriel, CA 91776
-<br />
-<br />
-Donation: VIP - $20, Regular - $10
+801 S. Ramon Street, San Gabriel, CA 91776
 <br />
 <br />
-Contact number: 626-975-3152, 909-525-0105
-<br />
-<br />
-Donation and Tickets Website: aatf.us
+Contact number: 626-975-3152, 909-275-4088
 <br />
 <br />
 EMail Address: info@aatf.us
-<br />
-<br />
-Program: Folklore Dance Drama, Folk Dance, Ballet, Hip-Hop, Chinese Dance, Japanese Dance, and Korean Drums
 </td>
 </tr>
 </table>
--->
 </div>
 <div class="story">
 <!--<h3>Purpose</h3>
