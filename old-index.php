@@ -110,7 +110,7 @@ if ($activitieshandle) {
 <table>
 <tr>
 <td>
-<h2><a href="/PosterPolaroids.jpg">Remininisce the Moment</a></h2>
+<h2><a href="/PosterPolaroids.jpg">Reminisce the Moment</a></h2>
 <br />
 Date: June 14, 2014 (Saturday)
 <br />
