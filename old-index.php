@@ -111,7 +111,7 @@ if ($activitieshandle) {
 <tr>
 <td>
 <h2><a href="/PosterPolaroids.jpg">Reminisce the Moment</a></h2>
-<a href="/PosterPolaroids.jpg"><img src="PosterPolaroids.jpg" width="350" height="452" alt="Poster" /></a>
+<a href="/PosterPolaroids.jpg"><img src="PosterPolaroids.jpg" width="400" height="517" alt="Poster" /></a>
 <br />
 Date: June 14, 2014 (Saturday)
 <br />
