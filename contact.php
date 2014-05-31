@@ -21,7 +21,8 @@ include_once('header.php');
 <p><a href="mailto:webmaster@aatf.us">webmaster@aatf.us</a></p>
 
 <p class="lead">Telephone:</p>
-<p>(626) 309-9274 or (626) 975-3152</p>
+<p>(626) 309-9274</p>
+<p>(626) 975-3152</p>
 
 <p class="lead">Fax:</p>
 <p>(626) 309-9201</p>
