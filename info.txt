@@ -1,0 +1,14 @@
+# Contact info submission
+
+url: aatf.us/
+site_owner: NGAN T CHEN
+address1: 135 EAST LAS TUNAS DRIVE
+address2: 
+city: SAN GABRIEL
+state: CA
+country: US
+postal_code: 91776
+phone_number: 626-309-9274
+display_email: info@aatf.us
+site_name: Asian Arts Talents Foundation
+site_description: The specific purpose of this organization is to raise funds to support Asian arts, education and culture, to sponsor public performance, to offer grants and scholarships for talented young Asians worldwide, to help and get involved with the community during disasters and catastrophes and to organize summer activities for younger generation. AATF has been a non profit organization since 2003.
