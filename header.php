@@ -50,7 +50,7 @@ padding-bottom: 20px;
 <div class="collapse navbar-collapse">
 <ul class="nav navbar-nav">
 <li><a href="/">Home</a></li>
-<li><a href="/old-about.php">About</a></li>
+<li><a href="/about.php">About</a></li>
 <li><a href="/activities.php"><?print $current_year ?> Activities</a></li>
 <li><a href="/gallery.php">Gallery</a></li>
 <li><a href="/videos.php">Videos</a></li>
