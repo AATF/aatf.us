@@ -1,7 +1,7 @@
 <?php include("functions.php"); ?>
 <div id="sectionLinks">
 <a href="/">Home</a>
-<a href="/old-about.php">About AATF</a>
+<a href="/about.php">About AATF</a>
 <a href="/activities.php"><?php print $current_year; ?> Activities</a>
 <a href="/gallery.php">Gallery</a>
 <a href="/videos.php">Videos</a>
