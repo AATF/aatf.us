@@ -33,8 +33,8 @@ include_once('header.php');
 <li>To offer scholarships for talented young Asians worldwide</li>
 <li>To help and get involved with the community during disasters and catastrophes</li>
 <li>To organize summer camps for younger generation</li>
-<li>To organize Dance Festivals &mdash; A dance show open to the public. Proceeds from the event will go to scholarships, grants and/or any other future events.</li>
-<li>To provide Dance Workshops</li>
+<li>To organize dance festivals &mdash; a dance show open to the public. Proceeds from the event will go to scholarships, grants and/or any other future events.</li>
+<li>To provide dance workshops</li>
 </ul>
 
 <?php include_once('footer.php'); ?>
