@@ -26,7 +26,7 @@ include_once('header.php');
 <img width="210" height="140" src="/images/image004.gif" align="right" hspace="9" alt="image004" />
 
 
-<p class="text-uppercase text-center">OUR MISSION:</p>
+<p class="text-center">Our Mission:</p>
 
 <ul>
 <li>To sponsor public arts performance</li>
