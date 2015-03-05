@@ -1,5 +1,5 @@
 <?php
-$title = $current_year . ' Activities';
+$title = date('Y') . ' Activities'; // year haxor until i understand php
 include_once('header.php');
 ?>
 
