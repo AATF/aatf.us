@@ -7,9 +7,10 @@ include_once('header.php');
 $winners = [];
 if ($scholarshipwinnershandle) {
     while (($buffer = fgets($scholarshipwinnershandle)) != false) {
-        if (substr(trim($buffer), 0, 1) != "#") {
-            list($year, $place, $name, $school, $essay) = preg_split('/:/', trim($buffer));
-            $winners[$year][$name] = ['place' => $place, 'school' => $school, 'essay' => $essay];
+        $buffer = trim($buffer);
+        if ((substr($buffer, 0, 1) != "#") && ($buffer != "")) {
+            list($year, $place, $name, $school, $display, $filename) = preg_split('/:/', $buffer);
+            $winners[$year][$name] = ['place' => $place, 'school' => $school, 'display' => $display, 'filename' => $filename];
         };
     };
 ?>
@@ -44,16 +45,23 @@ if ($scholarshipwinnershandle) {
 <h2><?php print $year ?> Scholarship Winners</h2>
 <?php
         foreach ($people as $name => $data) {
-            $essay = $data['essay'];
+            $display = $data['display'];
             $place = $data['place'];
-            if ($essay == true) {
+            $filename = $data['filename'];
+            if ($display == true) {
 ?>
 <p><?php print ordinal($place) ?> Place - <?php print $name; ?></p>
 <?php
             } else {
+                if ($filename) {
+?>
+<p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners/<?php print $filename ?>"><?php print $name; ?></a></p>
+<?php
+                } else {
 ?>
 <p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners/<?php print $year ?>-<?php print str_replace(' ', '', $name) ?>.pdf"><?php print $name; ?></a></p>
 <?php
+                };
             };
         };
 ?>
