@@ -69,7 +69,7 @@ shutdiv.style.visibility='hidden';
 <h1 id="siteName">Asian Arts Talents Foundation (AATF)</h1>
 <div id="utility">
 <a href="/forums" target="_blank">AATF Forums</a>
-<a href="//mail.aatf.us/" target="_blank">AATF Email</a>
+<a href="http://mail.aatf.us/" target="_blank">AATF Email</a>
 </div>
 <div id="globalNav"> <img alt="" src="gblnav_left.gif" height="32" width="4" id="gnl" /> <img alt="" src="glbnav_right.gif" height="32" width="4" id="gnr" />
 <div id="globalLink">
