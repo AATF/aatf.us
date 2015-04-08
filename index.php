@@ -135,7 +135,7 @@ if ($handle = opendir($dirname)) {
 
         <div class="row featurette">
             <div class="col-md-5">
-                <img class="featurette-image img-responsive" src="images/aatflogo-bw-transparent.png" alt="Generic placeholder image">
+                <img class="featurette-image img-responsive" src="images/aatflogo-bw-transparent.png" alt="AATF Logo">
             </div>
             <div class="col-md-7">
                 <h2 class="featurette-heading">Purpose</h2>
