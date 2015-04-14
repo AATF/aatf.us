@@ -32,15 +32,17 @@ $height =round($width / 1.5);
 <?php
 $pattern = '/(\.jpg$)|(\.png$)|(\.jpeg$)|(\.gif$)/'; // valid image extensions
 $dirname = 'images/Gallery';
+$count = 0;
 if ($handle = opendir($dirname)) {
   while (false !== ($file = readdir($handle))) {
     if (preg_match($pattern, $file)) { // if this file is a valid image
 ?>
             <!-- Slides Container -->
                 <div>
-                <img u="image" src2="<?php print $dirname . '/' . $file ?>" />
+                <img u="image" id="slide<?php print $count ?>" src2="<?php print $dirname . '/' . $file ?>" />
                 </div>
 <?php
+        $count++;
     };
   };
   closedir($handle);
