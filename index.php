@@ -149,20 +149,30 @@ if ($handle = opendir($dirname)) {
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Upcoming Performance</h2>
+                <h2 class="featurette-heading">Upcoming Event</h2>
                 <div class="lead">
-<h3>Mulan</h3>
-<p><label>Date:</label>
-June 13, 2015 (Saturday)</p>
-<p><label>Time:</label>
-7:30PM</p>
-<p><label>Place:</label>
+<h3>2016 Annual Party</h3>
+<p>
+<label>Date:</label>
+February 27, 2016 (Saturday)
+</p>
+<!--<p>
+<label>Time:</label>
+7:30PM
+</p>
+-->
+<p>
+<label>Place:</label>
 <address>
-San Gabriel Mission Playhouse<br />
-320 S. Mission Dr.<br />
+Hilton San Gabriel<br />
+225 W. Valley Blvd<br />
 San Gabriel, California 91776<br />
-</address></p>
-<p><label>Email Address:</label> info@aatf.us</p>
+</address>
+</p>
+<p>
+<label>Email Address:</label>
+info@aatf.us
+</p>
                 </div>
             </div>
             <div class="col-md-5">
