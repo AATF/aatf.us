@@ -1,4 +1,5 @@
 <?php
+include_once('functions.php');
 $title = 'Gallery';
 include_once('header.php');
 ?>

@@ -2,6 +2,9 @@
 $current_year = date('Y');
 $current_month = date('F');
 
+global $current_year;
+global $current_month;
+
 $activitiesfile = $current_year . 'as.txt';
 $activitieshandle = @fopen($activitiesfile, 'r');
 

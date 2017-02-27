@@ -1,5 +1,6 @@
 <?php
-$title = date('Y') . ' Activities'; // year haxor until i understand php
+include_once('functions.php');
+$title = $current_year . ' Activities';
 include_once('header.php');
 ?>
 
@@ -16,7 +17,7 @@ if ($activitieshandle) {
       list($date, $event) = explode(' - ', trim($buffer), 2);
 ?>
 <tr>
-  <td><?php print $date ?></td>
+  <td><?php print strftime('%B %e, %Y', strtotime($date)) ?></td>
   <td><?php print $event ?></td>
 </tr>
 <?php

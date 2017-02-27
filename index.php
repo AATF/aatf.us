@@ -1,5 +1,6 @@
 <?php
-$title = 'Asian Arts Talents Foundation (AATF) Home Page';
+include_once('functions.php');
+$title = 'AATF Home Page';
 include_once('header.php');
 ?>
 <audio autoplay>
