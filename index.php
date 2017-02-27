@@ -154,7 +154,7 @@ if ($handle = opendir($dirname)) {
 <h3>2017 Annual Party</h3>
 <p>
 <label>Date:</label>
-March 4, 2016 (Saturday)
+March 4, 2017 (Saturday)
 </p>
 <p>
 <label>Time:</label>
