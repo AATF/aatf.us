@@ -151,16 +151,15 @@ if ($handle = opendir($dirname)) {
             <div class="col-md-7">
                 <h2 class="featurette-heading">Upcoming Event</h2>
                 <div class="lead">
-<h3>2016 Annual Party</h3>
+<h3>2017 Annual Party</h3>
 <p>
 <label>Date:</label>
-February 27, 2016 (Saturday)
+March 4, 2016 (Saturday)
 </p>
-<!--<p>
+<p>
 <label>Time:</label>
 7:30PM
 </p>
--->
 <p>
 <label>Place:</label>
 <address>
@@ -175,9 +174,11 @@ info@aatf.us
 </p>
                 </div>
             </div>
-            <div class="col-md-5">
+<!--
+           <div class="col-md-5">
                 <a href="AATF Flyer.pdf"><img class="featurette-image img-responsive" src="AATF Flyer.jpg" alt="Flyer"></a>
             </div>
+-->
         </div>
 
         <hr class="featurette-divider">
