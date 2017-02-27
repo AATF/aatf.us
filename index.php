@@ -192,7 +192,7 @@ $count = 0;
 if ($activitieshandle) {
   while (($buffer = fgets($activitieshandle)) != false) {
     list($date, $event) = preg_split('/\s-\s/', trim($buffer));
-    list($month) = preg_split('/\s/', $date);
+    $month = format_date($date, '%B');
     if ($current_month == $month) {
 ?>
 <p><strong><?php print $date ?></strong></p>

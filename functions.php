@@ -16,6 +16,15 @@ $galleryhandle = @fopen($galleryfile, 'r');
 $scholarshipwinnersfile = 'scholarshipwinners.txt';
 $scholarshipwinnershandle = @fopen($scholarshipwinnersfile, 'r');
 
+function format_date($date, $format = null) {
+    if ($format) {
+        return strftime($format, strtotime($date));
+    }
+    else {
+        return strftime('%B %e, %Y', strtotime($date));
+    }
+}
+
 function ordinal($num) {
     $ones = $num % 10;
     $tens = floor($num / 10) % 10;
