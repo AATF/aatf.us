@@ -195,7 +195,7 @@ if ($activitieshandle) {
     $month = format_date($date, '%B');
     if ($current_month == $month) {
 ?>
-<p><strong><?php print $date ?></strong></p>
+<p><strong><?php print format_date($date) ?></strong></p>
 <p><?php print $event ?></p>
 <?php
       $count++;
