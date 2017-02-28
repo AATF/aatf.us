@@ -1,0 +1,26 @@
+#--- DH-PHP handlers ---
+#AddHandler php-cgi .php
+#Action php-cgi /cgi-bin/dispatch.cgi
+AddType application/x-httpd-php .php
+
+Options +Includes
+Options +FollowSymLinks
+Options +MultiViews
+Options -Indexes
+
+#DirectoryIndex 10thanniversary.php
+#DirectoryIndex old-index.php index.php index.html index.txt
+DirectoryIndex index.php index.html index.txt
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+RewriteEngine on
+### BEGIN FORUM REWRITE ###
+RewriteRule ^/?forum(.*)$ /forums$1 [L,R=301]
+### END FORUM REWRITE ###
+
+### BEGIN HTTPS REWRITE ###
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://www.aatf.us%{REQUEST_URI} [L,R=301]
+### END HTTPS REWRITE ###
