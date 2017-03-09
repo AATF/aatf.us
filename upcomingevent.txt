@@ -1,0 +1,31 @@
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Upcoming Event</h2>
+                <div class="lead">
+<h3>2017 Biennial Dance Festival</h3>
+<p>
+<label>Date:</label>
+June 24, 2017 (Saturday)
+</p>
+<p>
+<label>Time:</label>
+6:00PM
+</p>
+<p>
+<label>Place:</label>
+<address>
+San Gabriel Mission Playhouse<br />
+320 South Mission Drive<br />
+San Gabriel, CA 91776<br />
+</address>
+</p>
+<p>
+<label>Email Address:</label>
+info@aatf.us
+</p>
+                </div>
+            </div>
+<!--
+           <div class="col-md-5">
+                <a href="AATF Flyer.pdf"><img class="featurette-image img-responsive" src="AATF Flyer.jpg" alt="Flyer"></a>
+            </div>
+-->

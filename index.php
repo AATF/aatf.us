@@ -149,37 +149,7 @@ if ($handle = opendir($dirname)) {
         <hr class="featurette-divider">
 
         <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Upcoming Event</h2>
-                <div class="lead">
-<h3>2017 Annual Party</h3>
-<p>
-<label>Date:</label>
-March 4, 2017 (Saturday)
-</p>
-<p>
-<label>Time:</label>
-7:30PM
-</p>
-<p>
-<label>Place:</label>
-<address>
-Hilton San Gabriel<br />
-225 W. Valley Blvd<br />
-San Gabriel, California 91776<br />
-</address>
-</p>
-<p>
-<label>Email Address:</label>
-info@aatf.us
-</p>
-                </div>
-            </div>
-<!--
-           <div class="col-md-5">
-                <a href="AATF Flyer.pdf"><img class="featurette-image img-responsive" src="AATF Flyer.jpg" alt="Flyer"></a>
-            </div>
--->
+<?php print file_get_contents("upcomingevent.txt"); ?>
         </div>
 
         <hr class="featurette-divider">
