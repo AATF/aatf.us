@@ -27,7 +27,7 @@ if ($scholarshipwinnershandle) {
 <?php
         foreach ($winners[$current_year - 1] as $name => $data) {
 ?>
-  <p><?php print ordinal($data['place']); ?> Place - <?php print $name; ?> <?php if ($data['school']) { ?>(<?php print $data['school'] ?>)<?php } ?> </p>
+<p><?php print ordinal($data['place']); ?> Place - <?php print $name; ?> <?php if ($data['school']) { ?>(<?php print $data['school'] ?>)<?php } ?> </p>
 <?php
         }
     }
