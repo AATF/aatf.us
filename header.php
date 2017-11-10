@@ -47,14 +47,14 @@ padding-bottom: 20px;
 <div class="collapse navbar-collapse">
 <ul class="nav navbar-nav">
 <li><a href="/">Home</a></li>
-<li><a href="/about.php">About</a></li>
-<li><a href="/activities.php"><?print $current_year ?> Activities</a></li>
-<li><a href="/gallery.php">Gallery</a></li>
-<li><a href="/videos.php">Videos</a></li>
-<li><a href="/forms.php">Forms</a></li>
-<li><a href="/scholarshipwinners.php">Scholarship Winners</a></li>
-<li><a href="/support.php">Support</a></li>
-<li><a href="/contact.php">Contact</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/activities"><?print $current_year ?> Activities</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/videos">Videos</a></li>
+<li><a href="/forms">Forms</a></li>
+<li><a href="/scholarshipwinners">Scholarship Winners</a></li>
+<li><a href="/support">Support</a></li>
+<li><a href="/contact">Contact</a></li>
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
 <ul class="dropdown-menu">
