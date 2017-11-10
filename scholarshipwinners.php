@@ -56,11 +56,11 @@ if ($scholarshipwinnershandle) {
             } else {
                 if ($filename) {
 ?>
-<p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners/<?php print $filename ?>"><?php print $name; ?></a></p>
+<p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners_files/<?php print $filename ?>"><?php print $name; ?></a></p>
 <?php
                 } else {
 ?>
-<p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners/<?php print $year ?>-<?php print str_replace(' ', '', $name) ?>.pdf"><?php print $name; ?></a></p>
+<p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners_files/<?php print $year ?>-<?php print str_replace(' ', '', $name) ?>.pdf"><?php print $name; ?></a></p>
 <?php
                 };
             };
