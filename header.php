@@ -11,7 +11,7 @@
 <title>Asian Arts Talents Foundation - <?php global $title; print $title ?></title>
 
 <!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <style>
