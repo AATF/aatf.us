@@ -69,6 +69,10 @@ if ($scholarshipwinnershandle) {
 </div>
 <?php
     };
+} else {
+?>
+No scholarship winners yet.
+<?php
 };
 ?>
 </div>
