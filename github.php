@@ -1,3 +1,3 @@
 <?php
-echo shell_exec("git checkout -- . && git pull && git lfs pull");
+echo shell_exec("git reset --hard && git pull && git lfs pull");
 ?>
