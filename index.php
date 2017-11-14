@@ -51,6 +51,9 @@ if ($handle = opendir($dirname)) {
 ?>
             </div>
 
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
             <!--#region Bullet Navigator Skin Begin -->
             <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
             <style>
