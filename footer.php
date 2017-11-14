@@ -17,6 +17,13 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<?php
+if ($_SERVER['SCRIPT_NAME'] != "/index.php") {
+?>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<?php
+};
+?>
 <script src="assets/js/bootstrap.min.js"></script>
 
 <!-- Google Analytics -->
