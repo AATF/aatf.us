@@ -13,7 +13,7 @@ list($galleryname, $ignore) = preg_split('/\./', $fullgalleryname);
 $galleryfile = $galleryname . '.gallery';
 $galleryhandle = @fopen($galleryfile, 'r');
 
-$scholarshipwinnersfile = 'scholarshipwinners.txt';
+$scholarshipwinnersfile = 'scholarshipwinners_file/scholarshipwinners.txt';
 $scholarshipwinnershandle = @fopen($scholarshipwinnersfile, 'r');
 
 function format_date($date, $format = null) {
