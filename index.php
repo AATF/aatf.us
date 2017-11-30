@@ -152,7 +152,7 @@ if ($handle = opendir($dirname)) {
         <hr class="featurette-divider">
 
         <div class="row featurette">
-<?php print file_get_contents("upcomingevent.txt"); ?>
+<?php print file_get_contents("featured.txt"); ?>
         </div>
 
         <hr class="featurette-divider">
