@@ -10,7 +10,7 @@ include_once('header.php');
 
 <h2>Video Links</h2>
 <p>
-<a href="https://mediazilla.com/tovo51ck9">2017 Biennial Dance Festival</a>
+<a href="https://mediazilla.com/tovo51ck9" target="_blank">2017 Biennial Dance Festival</a>
 </p>
 
 <h2>Videos</h2>
