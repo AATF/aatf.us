@@ -1,7 +1,7 @@
 # Contact info
 
 url: www.aatf.us
-site_owner: Ngan T Chen
+site_owner: Asians Arts Talents Foundation
 address1: 135 East Las Tunas Drive
 address2: 
 city: San Gabriel
