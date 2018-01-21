@@ -6,12 +6,12 @@ global $current_year;
 global $current_month;
 
 $activitiesfile = $current_year . 'as.txt';
-$activitieshandle = @fopen($activitiesfile, 'r');
+$activitiesarr = file($activitiesfile, FILE_SKIP_EMPTY_LINES);
 
 list($ignore, $fullgalleryname) = preg_split('/\//', $_SERVER['SCRIPT_URL']);
 list($galleryname, $ignore) = preg_split('/\./', $fullgalleryname);
 $galleryfile = $galleryname . '.gallery';
-$galleryhandle = @fopen($galleryfile, 'r');
+$galleryarr = file($galleryfile, FILE_SKIP_EMPTY_LINES);
 
 $scholarshipwinnersfile = 'scholarshipwinners_files/scholarshipwinners.txt';
 $scholarshipwinnershandle = @fopen($scholarshipwinnersfile, 'r');

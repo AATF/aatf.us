@@ -11,10 +11,10 @@ include_once('header.php');
 
 <table class="table">
 <?php
-if ($activitieshandle) {
-  natsort($activitieshandle);
+if ($activitiesarr) {
+  natsort($activitiesarr);
 
-  while (($buffer = fgets($activitieshandle)) != false) {
+  foreach ($activitiesarr as $buffer) {
     if (substr(trim($buffer), 0, 1) != "#") {
       list($date, $event) = explode(' - ', trim($buffer), 2);
 ?>
