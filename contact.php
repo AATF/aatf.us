@@ -28,7 +28,7 @@ include_once('header.php');
 <p>(626) 309-9201</p>
 
 <p class="lead">Address:</p>
-<p>135 East Las Tunas Drive</p>
-<p>San Gabriel, CA 91776</p>
+<p>2410 Del Mar Avenue</p>
+<p>Rosemead, CA 91770</p>
 
 <?php include_once('footer.php'); ?>
