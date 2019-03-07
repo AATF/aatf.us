@@ -1,5 +1,21 @@
 #year:place:name:school name:display essay:pdf name
 
+2017:1:Miranda Cheung
+2017:1:Annie  Hau
+
+2017:2:Isabella Kim
+2017:2:Katherine  Hang
+2017:2:Vivian  Huang
+2017:2:Katie Wang
+2017:2:Jessica Li
+2017:2:Jaime Choy
+2017:2:Paris Pulido
+2017:2:Jasmine (Dating) Li
+
+2017:3:Chanel Pulido
+2017:3:Janet Wu
+2017:3:Lily Guo
+
 2016:1:Christine Luu::1
 2016:2:Vicki Huang::1
 2016:3:Tiffany Chung::1
