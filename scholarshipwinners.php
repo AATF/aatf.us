@@ -51,20 +51,24 @@ if ($scholarshipwinnershandle) {
             $filename = $data['filename'];
 
             $pdf_name = "$year-" . str_replace(' ', '', $name) . ".pdf";
-            $scholarship_winners_dir = "/scholarshipwinners_files";
+            $scholarship_winners_dir = "scholarshipwinners_files";
 
-            $begin_text = "<p>" . ordinal($place) . " Place - $name";
+            $begin_text = "<p>" . ordinal($place) . " Place - ";
 
-            if (file_exists("$scholarship_winners_dir/$filename")) {
-                $print_name = $filename;
-            } else if (file_exists("$scholarship_winners_dir/$pdf_name")) {
+            $print_name = "";
+            $found_file = false;
+            if (file_exists("$scholarship_winners_dir/$pdf_name")) {
                 $print_name = $pdf_name;
+                $found_file = true;
+            } else if ($filename && file_exists("$scholarship_winners_dir/$filename")) {
+                $print_name = $filename;
+                $found_file = true;
             };
 
-            if (!$display || $display == "") {
-              print $begin_text . "</p>";
+            if ($display || $found_file) {
+              print $begin_text .  "<a href=\"/$scholarship_winners_dir/$print_name\">$name</a></p>";
             } else {
-              print $begin_text .  "<a href=\"$scholarship_winners_dir/$print_name\">$name</a></p>";
+              print $begin_text . "$name</p>";
             };
         };
 ?>
