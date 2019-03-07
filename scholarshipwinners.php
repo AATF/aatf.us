@@ -49,12 +49,12 @@ if ($scholarshipwinnershandle) {
             $display = $data['display'];
             $place = $data['place'];
             $filename = $data['filename'];
-            if ($display == true) {
+            if ($display == true || !$display) {
 ?>
 <p><?php print ordinal($place) ?> Place - <?php print $name; ?></p>
 <?php
             } else {
-                if ($filename) {
+                if ($filename && file_exists($filename)) {
 ?>
 <p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners_files/<?php print $filename ?>"><?php print $name; ?></a></p>
 <?php

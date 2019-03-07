@@ -1,11 +1,26 @@
 #year:place:name:school name:display essay:pdf name
 
+2018:1:Serena Trang
+
+2018:2:Olivia Cheung
+
+2018:3:Kristie Quan
+
+2018:4:Michelle Shim
+2018:4:Paige Nakahara
+
+2018:5:Jessica He
+2018:5:Natalie Leung
+
+2018:6:Hannah Lam
+2018:6:Michelle Bian
+
 2017:1:Miranda Cheung
-2017:1:Annie  Hau
+2017:1:Annie Hau
 
 2017:2:Isabella Kim
-2017:2:Katherine  Hang
-2017:2:Vivian  Huang
+2017:2:Katherine Hang
+2017:2:Vivian Huang
 2017:2:Katie Wang
 2017:2:Jessica Li
 2017:2:Jaime Choy
