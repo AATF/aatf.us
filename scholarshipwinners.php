@@ -49,7 +49,10 @@ if ($scholarshipwinnershandle) {
             $display = $data['display'];
             $place = $data['place'];
             $filename = $data['filename'];
-            if ($display == true || !$display) {
+
+            $pdf_name = "$year - " . str_replace(' ', '', $name);
+
+            if (($display == true || !$display) || !file_exists($filename) || !file_exists($pdf_name)) {
 ?>
 <p><?php print ordinal($place) ?> Place - <?php print $name; ?></p>
 <?php
@@ -60,7 +63,7 @@ if ($scholarshipwinnershandle) {
 <?php
                 } else {
 ?>
-<p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners_files/<?php print $year ?>-<?php print str_replace(' ', '', $name) ?>.pdf"><?php print $name; ?></a></p>
+<p><?php print ordinal($place) ?> Place - <a href="/scholarshipwinners_files/<?php print $pdf_name ?>.pdf"><?php print $name; ?></a></p>
 <?php
                 };
             };
