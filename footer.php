@@ -4,7 +4,7 @@
 <p>Copyright &copy; 2003-<?php print date("Y"); ?> Asian Arts Talents Foundation. All Rights Reserved.</p>
 <p style="color: #17202A; font-size: 95%">Asian Arts Talents Foundation is a United States 501(c)(3) non-profit organization. EIN: 57-1193358</p>
 <p style="color: #CBCBCB; font-size: 90%">Source code located at <a href="//github.com/aatf/aatf.us">GitHub</a>.</p>
-<p style="color: #CBCBCB; font-size: 90%">Site Last Modified: 6 March 2019</p>
+<p style="color: #CBCBCB; font-size: 90%">Site Last Modified: 8 June 2019</p>
 </footer>
 
 <script type="text/javascript">google_ad_client="ca-pub-4985266849377192";google_ad_slot="8481272763";google_ad_width=728;google_ad_height=90;</script>
