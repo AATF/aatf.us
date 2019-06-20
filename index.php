@@ -203,6 +203,7 @@ if ($activitieshandle) {
               //responsive code end
           });
       </script>
+    </div>
   </div>
 </main>
 
