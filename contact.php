@@ -5,7 +5,7 @@ include_once('header.php');
 
 <div class="container">
 <div class="page-header">
-<h1><?print $title ?></h1>
+<h1><?php print $title; ?></h1>
 </div>
 
 <p class="lead">General Information:</p>

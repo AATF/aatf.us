@@ -11,11 +11,13 @@
 
 <!-- Bootstrap core CSS -->
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- sticky footer -->
+<link href="/assets/css/sticky-footer.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <style>
 body {
-padding-top: 50px;
+padding-top: 90px;
 padding-bottom: 20px;
 }
 </style>
@@ -32,45 +34,42 @@ padding-bottom: 20px;
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="/">Asian Arts Talents Foundation</a>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav">
-<li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/activities"><?print $current_year ?> Activities</a></li>
-<li><a href="/gallery">Gallery</a></li>
-<li><a href="/videos">Videos</a></li>
-<li><a href="/forms">Forms</a></li>
-<li><a href="/scholarshipwinners">Scholarship Winners</a></li>
-<li><a href="/support">Support</a></li>
-<li><a href="/contact">Contact</a></li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
-<ul class="dropdown-menu">
-<li><a href="/forums" target="_blank">AATF Forums</a></li>
-<li><a href="http://mail.aatf.us/" target="_blank">AATF Email</a></li>
-<li class="divider"></li>
-<li class="dropdown-header">Social Network Links</li>
-<li><a href="//www.facebook.com/aatfus" target="_blank" id="gl1" class="glink" onmouseover="ehandler(event,menuitem1);">Facebook Page</a></li>
-<li><a href="//twitter.com/aatfus" target="_blank" id="gl2" class="glink twitter-follow-button" data-show-count="false" onmouseover="ehandler(event,menuitem2);">Follow @aatfus</a></li>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
-<li><a href="//plus.google.com/+AatfUsa" target="_blank" id="gl3" class="glink" onmouseover="ehandler(event,menuitem2);">Google Plus Page</a></li>
-<li><a href="//www.youtube.com/user/aatfus" target="_blank" id="gl4" class="glink" onmouseover="ehandler(event,menuitem2);">YouTube Page</a></li>
-<li><a href="//www.linkedin.com/groups/Asian-Arts-Talents-Foundation-6620148" target="_blank" id="gl5" class="glink" onmouseover="ehandler(event,menuitem2);">LinkedIn Group Page</a></li>
-<li><a href="//www.linkedin.com/company/asian-arts-talents-foundation" target="_blank" id="gl6" class="glink" onmouseover="ehandler(event,menuitem2);">LinkedIn Company Page</a></li>
-</ul>
-</li>
-</ul>
-</div><!--/.nav-collapse -->
-</div>
-</div>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Asian Arts Talents Foundation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/activities"><?print $current_year ?> Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="/videos">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="/forms">Forms</a></li>
+          <li class="nav-item"><a class="nav-link" href="/scholarshipwinners">Scholarship Winners</a></li>
+          <li class="nav-item"><a class="nav-link" href="/support">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links <b class="caret"></b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown">
+              <a class="dropdown-item" href="/forums" target="_blank">AATF Forums</a>
+              <a class="dropdown-item" href="http://mail.aatf.us/" target="_blank">AATF Email</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="//www.facebook.com/aatfus" target="_blank" id="gl1" onmouseover="ehandler(event,menuitem1);">Facebook Page</a>
+              <a class="dropdown-item twitter-follow-button" href="//twitter.com/aatfus" target="_blank" id="gl2" data-show-count="false" onmouseover="ehandler(event,menuitem2);">Follow @aatfus</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+              <a class="dropdown-item" href="//plus.google.com/+AatfUsa" target="_blank" id="gl3" onmouseover="ehandler(event,menuitem2);">Google Plus Page</a>
+              <a class="dropdown-item" href="//www.youtube.com/user/aatfus" target="_blank" id="gl4" onmouseover="ehandler(event,menuitem2);">YouTube Page</a>
+              <a class="dropdown-item" href="//www.linkedin.com/groups/Asian-Arts-Talents-Foundation-6620148" target="_blank" id="gl5" onmouseover="ehandler(event,menuitem2);">LinkedIn Group Page</a>
+              <a class="dropdown-item" href="//www.linkedin.com/company/asian-arts-talents-foundation" target="_blank" id="gl6" onmouseover="ehandler(event,menuitem2);">LinkedIn Company Page</a>
+            </div>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+</header>
