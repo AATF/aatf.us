@@ -1,0 +1,6 @@
+/* arrow navigator */
+.jssora055 {display:block;position:absolute;cursor:pointer;}
+.jssora055 .a {fill:none;stroke:#fff;stroke-width:960;stroke-miterlimit:10;}
+.jssora055:hover {opacity:.8;}
+.jssora055.jssora055dn {opacity:.5;}
+.jssora055.jssora055ds {opacity:.3;pointer-events:none;}

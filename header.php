@@ -11,16 +11,9 @@
 
 <!-- Bootstrap core CSS -->
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-<!-- sticky footer -->
-<link href="/assets/css/sticky-footer.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<style>
-body {
-padding-top: 90px;
-padding-bottom: 20px;
-}
-</style>
+<!-- custom styles -->
+<link href="/assets/css/aatf-custom.css" rel="stylesheet">
+<link href="/assets/css/jssor.css" rel="stylesheet">
 
 <!-- Just for debugging purposes. Don't actually copy this line! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,7 +39,7 @@ padding-bottom: 20px;
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="/activities"><?print $current_year ?> Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="/activities"><?php print $current_year ?> Activities</a></li>
           <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="/videos">Videos</a></li>
           <li class="nav-item"><a class="nav-link" href="/forms">Forms</a></li>

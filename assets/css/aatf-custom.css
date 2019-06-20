@@ -1,12 +1,14 @@
-/* Sticky footer styles
--------------------------------------------------- */
+/* custom styles */
+
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  margin-bottom: 160px; /* Margin bottom by footer height */
+  padding-top: 75px;
+  padding-bottom: 20px;
+  margin-bottom: 90px; /* Margin bottom by footer height */
 }
 
 .footer {
