@@ -1,7 +1,6 @@
 <?php
-include_once('functions.php');
-$title = 'AATF Home Page';
-include_once('header.php');
+$title = "Home Page";
+include_once("header.php");
 ?>
 
 <main role="main">
@@ -23,13 +22,13 @@ $height = round($width / 1.5);
               <!-- Slides Container -->
               <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: <?php print $width ?>px; height: <?php print $height ?>px; overflow: hidden;">
 <?php
-$pattern = '/(\.jpg$)|(\.png$)|(\.jpeg$)|(\.gif$)/'; // valid image extensions
-$dirname = 'images/Gallery';
+$pattern = "/(\.jpg$)|(\.png$)|(\.jpeg$)|(\.gif$)/"; // valid image extensions
+$dirname = "images/Gallery";
 $count = 0;
 if ($handle = opendir($dirname)) {
   while (false !== ($file = readdir($handle))) {
     if (preg_match($pattern, $file)) { // if this file is a valid image
-      $filename = $dirname . '/' . $file;
+      $filename = $dirname . "/" . $file;
       $slide = "slice" . $count;
 ?>
                 <div>
@@ -43,7 +42,6 @@ if ($handle = opendir($dirname)) {
 };
 ?>
               </div>
-
 
          <!--#region Arrow Navigator Skin Begin -->
         <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
@@ -62,10 +60,6 @@ if ($handle = opendir($dirname)) {
 
           </div>
           <!-- Jssor Slider End -->
-
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
 
       <div class="container marketing">
         <div class="row featurette">
@@ -109,8 +103,8 @@ if ($handle = opendir($dirname)) {
 $count = 0;
 if ($activitieshandle) {
   while (($buffer = fgets($activitieshandle)) != false) {
-    list($date, $event) = preg_split('/\s-\s/', trim($buffer));
-    $month = format_date($date, '%B');
+    list($date, $event) = preg_split("/\s-\s/", trim($buffer));
+    $month = format_date($date, "%B");
     if ($current_month == $month) {
 ?>
   <p><strong><?php print format_date($date) ?></strong></p>
@@ -133,7 +127,7 @@ if ($activitieshandle) {
             </div>
           </div>
           <div class="col-md-7">
-            <h2 class="featurette-heading">Current Month's Activities</h2>
+            <h2 class="featurette-heading">Current Month"s Activities</h2>
           </div>
         </div>
         <!-- /END THE FEATURETTES -->
@@ -181,12 +175,12 @@ if ($activitieshandle) {
                   }
               };
 
-              //Make the element 'slider1_container' visible before initialize jssor slider.
+              //Make the element "slider1_container" visible before initialize jssor slider.
               $("#slider1_container").css("display", "block");
               var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
               //responsive code begin
-              //you can remove responsive code if you don't want the slider scales while window resizes
+              //you can remove responsive code if you don"t want the slider scales while window resizes
               function ScaleSlider() {
                   var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
                   if (parentWidth) {
@@ -207,4 +201,4 @@ if ($activitieshandle) {
   </div>
 </main>
 
-<?php include_once('footer.php'); ?>
+<?php include_once("footer.php"); ?>

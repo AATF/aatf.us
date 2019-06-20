@@ -1,0 +1,28 @@
+/* custom styles */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 75px;
+  padding-bottom: 10%;
+  margin-bottom: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #F5F5F5;
+}
+
+.footer p {
+  height: 10px;
+}
+
+.footer a {
+  color: #B3B9FF;
+}

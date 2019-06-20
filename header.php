@@ -1,3 +1,7 @@
+<?php
+include_once('functions.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -12,7 +16,7 @@
 <!-- Bootstrap core CSS -->
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <!-- custom styles -->
-<link href="/assets/css/aatf-custom.css" rel="stylesheet">
+<link href="/assets/css/custom.css" rel="stylesheet">
 <link href="/assets/css/jssor.css" rel="stylesheet">
 
 <!-- Just for debugging purposes. Don't actually copy this line! -->

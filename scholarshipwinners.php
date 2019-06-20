@@ -1,5 +1,4 @@
 <?php
-include_once('functions.php');
 $title = 'Scholarship Winners';
 include_once('header.php');
 ?>

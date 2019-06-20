@@ -1,5 +1,4 @@
 <?php
-include_once('functions.php');
 $title = 'Error 404';
 include_once('header.php');
 ?>

@@ -1,5 +1,4 @@
 <?php
-include_once('functions.php');
 $title = 'Error 403';
 include_once('header.php');
 ?>
