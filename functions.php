@@ -1,22 +1,22 @@
 <?php
-$current_year = date('Y');
-$current_month = date('F');
+$current_year = date("Y");
+$current_month = date("F");
 
 global $current_year;
 global $current_month;
 
-$activitiesfile = $current_year . 'as.txt';
+$activitiesfile = $current_year . "-activities.txt";
 $activitiesarr = file($activitiesfile, FILE_SKIP_EMPTY_LINES);
 
-$scholarshipwinnersfile = 'scholarshipwinners_files/scholarshipwinners.txt';
-$scholarshipwinnershandle = @fopen($scholarshipwinnersfile, 'r');
+$scholarshipwinnersfile = "scholarshipwinners_files/scholarshipwinners.txt";
+$scholarshipwinnershandle = @fopen($scholarshipwinnersfile, "r");
 
 function format_date($date, $format = null) {
     if ($format) {
         return strftime($format, strtotime($date));
     }
     else {
-        return strftime('%B %e, %Y', strtotime($date));
+        return strftime("%B %e, %Y", strtotime($date));
     }
 }
 
