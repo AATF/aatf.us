@@ -1,5 +1,5 @@
 <?php
-$title = 'Support';
+$title = 'Donate';
 include_once('header.php');
 ?>
 

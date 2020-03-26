@@ -48,7 +48,7 @@ include_once('functions.php');
           <li class="nav-item"><a class="nav-link" href="/videos">Videos</a></li>
           <li class="nav-item"><a class="nav-link" href="/forms">Forms</a></li>
           <li class="nav-item"><a class="nav-link" href="/scholarshipwinners">Scholarship Winners</a></li>
-          <li class="nav-item"><a class="nav-link" href="/support">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="/donate">Donate</a></li>
           <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links <b class="caret"></b></a>
