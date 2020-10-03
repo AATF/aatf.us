@@ -75,28 +75,9 @@ if ($handle = opendir($dirname)) {
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <h2 class="featurette-heading">2019 Biennial Dance Festival</h2>
-
-          <div class="row featurette">
-            <div class="col-md-5">
-              <a href="images/AATF-Post.jpg">
-                <img width="450" height="600" class="featurette-image img-responsive" src="images/AATF-Post.jpg" alt="poster">
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="images/IMG_8945.jpg">
-                <img width="250" height="613" class="featurette-image img-responsive" src="images/IMG_8945.jpg" alt="preview">
-              </a>
-            </div>
-            <div class="col-md-3">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/-RCnBZ8N3i8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Current Month's Activities</h2>
           </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
             <div class="col-md-5">
                 <div class="lead">
 <?php
@@ -125,9 +106,6 @@ if ($activitieshandle) {
 }
 ?>
             </div>
-          </div>
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Current Month"s Activities</h2>
           </div>
         </div>
         <!-- /END THE FEATURETTES -->
