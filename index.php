@@ -1,5 +1,6 @@
 <?php
 $title = "Home Page";
+
 include_once("header.php");
 ?>
 
@@ -22,23 +23,45 @@ $height = round($width / 1.5);
               <!-- Slides Container -->
               <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: <?php print $width ?>px; height: <?php print $height ?>px; overflow: hidden;">
 <?php
+function flatten(array $array) {
+    $return = array();
+
+    array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
+
+    return $return;
+}
+function recurse_dir($dirname) {
+    $dir_contents = scandir($dirname);
+    foreach ($dir_contents as $orig_dir_or_file) {
+        if (!in_array($orig_dir_or_file, [".", ".."])) {
+            $dir_or_file = $dirname . DIRECTORY_SEPARATOR . $orig_dir_or_file;
+
+            if (is_dir($dir_or_file)) {
+                $arr[] = recurse_dir($dir_or_file);
+            } else {
+                $arr[] = $dir_or_file;
+            };
+        };
+    };
+
+    return flatten($arr);
+};
+
 $pattern = "/(\.jpg$)|(\.png$)|(\.jpeg$)|(\.gif$)/"; // valid image extensions
-$dirname = "images/Gallery";
+$dirname = "images";
 $count = 0;
-if ($handle = opendir($dirname)) {
-  while (false !== ($file = readdir($handle))) {
-    if (preg_match($pattern, $file)) { // if this file is a valid image
-      $filename = $dirname . "/" . $file;
-      $slide = "slice" . $count;
+
+$files = recurse_dir($dirname, $files);
+foreach ($files as $file) {
+  if (preg_match($pattern, $file)) { // if this file is a valid image
+    $slide = "slide" . $count;
 ?>
                 <div>
-                  <a href="<?php print $filename ?>"><img alt="<?php print $slide ?>" data-u="image" id="<?php print $slide ?>" src="<?php print $filename ?>" /></a>
+                  <a href="<?php print $file; ?>"><img alt="<?php print $slide ?>" data-u="image" id="<?php print $slide ?>" src="<?php print $file; ?>" /></a>
                 </div>
 <?php
-        $count++;
-    };
+      $count++;
   };
-  closedir($handle);
 };
 ?>
               </div>

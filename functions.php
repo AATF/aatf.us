@@ -4,6 +4,7 @@ $current_month = date("F");
 
 global $current_year;
 global $current_month;
+global $extra_head;
 
 $activitiesfile = $current_year . "-activities.txt";
 $activitiesarr = file($activitiesfile, FILE_SKIP_EMPTY_LINES);
