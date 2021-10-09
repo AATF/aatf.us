@@ -35,7 +35,11 @@ if ($scholarshipwinnershandle) {
   </div>
 
   <div class="container">
-    <p class="lead">You need Adobe Reader to be able to open these files. If you do not have the program, you can download it <a href="http://get.adobe.com/reader/">HERE</a>.</p>
+    <p class="lead">
+      You need a PDF reader to be able to open these files. Most browsers should be able to open these files.
+      <br />
+      If you do not have one, you can download <a href="http://get.adobe.com/reader/">Adobe Reader</a>.
+    </p>
 
     <div class="row">
     <?php

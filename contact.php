@@ -8,26 +8,26 @@ include_once('header.php');
     <h1><?php print $title; ?></h1>
   </div>
 
-  <p class="lead">General Information:</p>
+  <h3>General Information</h3>
   <p><a href="mailto:info@aatf.us">info@aatf.us</a></p>
 
-  <p class="lead">Performance Information:</p>
+  <h3>Performance Information</h3>
   <p><a href="mailto:performance@aatf.us">performance@aatf.us</a></p>
 
-  <p class="lead">Scholarship Information:</p>
+  <h3>Scholarship Information</h3>
   <p><a href="mailto:scholarship@aatf.us">scholarship@aatf.us</a></p>
 
-  <p class="lead">Website Issues:</p>
+  <h3>Website Issues</h3>
   <p><a href="mailto:webmaster@aatf.us">webmaster@aatf.us</a></p>
 
-  <p class="lead">Telephone:</p>
+  <h3>Telephone</h3>
   <p>(626) 309-9274</p>
   <p>(626) 975-3152</p>
 
-  <p class="lead">Fax:</p>
+  <h3>Fax</h3>
   <p>(626) 309-9201</p>
 
-  <p class="lead">Address:</p>
+  <h3>Address</h3>
   <p>2410 Del Mar Avenue</p>
   <p>Rosemead, CA 91770</p>
 </div>
