@@ -8,6 +8,9 @@ include_once('header.php');
     <h1><?php print $title; ?></h1>
   </div>
 
+  <h3>Discord</h3>
+  <p><a href="https://discord.gg/fS2wzqP52Y">Join the server!</a></p>
+
   <h3>General Information</h3>
   <p><a href="mailto:info@aatf.us">info@aatf.us</a></p>
 
