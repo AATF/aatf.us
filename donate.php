@@ -20,7 +20,7 @@ include_once('header.php');
 
   <p><a href="/donationform.pdf" target="_blank" class="capsule">Donation Form</a></p>
 
-  <h2>Online Donations</h2>
+  <h3>Online Donations</h3>
   <p><a href="https://www.patreon.com/bePatron?u=5695932" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></p>
 
   <button type="button" aria-label="Donate" data-formId="19142" style="padding: 12px 35px; font-size: 18px; border-radius: 3px; margin: 10px auto; background-color: ; color: null; border: none; outline: none; cursor: pointer; display: block">Donate</button>
