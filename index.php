@@ -91,13 +91,13 @@ foreach ($files as $file) {
           </div>
           <div class="col-md-7">
             <h2 class="featurette-heading">Purpose</h2>
-              <p class="lead">The specific purpose of Asian Arts Talents Foundation is:</p>
+              <p class="lead">The specific purpose of Asian Arts Talents Foundation is to:</p>
                 <ul>
-                  <li><p class="lead">to raise funds to support Asian arts, education, and culture</p></li>
-                  <li><p class="lead">to sponsor public performances</p></li>
-                  <li><p class="lead">to offer grants and scholarships for talented, young Asians worldwide</p></li>
-                  <li><p class="lead">to help and get involved with the community during disasters and catastrophes</p></li>
-                  <li><p class="lead">to organize summer activities for younger generations</p></li>
+                  <li><p class="lead">raise funds to support Asian arts, education, and culture</p></li>
+                  <li><p class="lead">sponsor public performances</p></li>
+                  <li><p class="lead">offer grants and scholarships for talented, young Asians worldwide</p></li>
+                  <li><p class="lead">help and get involved with the community during disasters and catastrophes</p></li>
+                  <li><p class="lead">organize summer activities for younger generations</p></li>
                 </ul>
                 <p class="lead">AATF has been a non-profit organization since 2003.</p>
           </div>
