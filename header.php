@@ -56,15 +56,13 @@ include_once('functions.php');
               <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links <b class="caret"></b></a>
               <div class="dropdown-menu" aria-labelledby="dropdown">
                 <a class="dropdown-item" href="/forums" target="_blank">AATF Forums</a>
-                <a class="dropdown-item" href="http://mail.aatf.us/" target="_blank">AATF Email</a>
                 <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="//twitch.tv/aatfus" target="_blank">Twitch</a>
+                <a class="dropdown-item twitter-follow-button" href="//twitter.com/aatfus" target="_blank" id="gl2" data-show-count="false" onmouseover="ehandler(event,menuitem2);">Twitter</a>
                 <a class="dropdown-item" href="//www.facebook.com/aatfus" target="_blank" id="gl1" onmouseover="ehandler(event,menuitem1);">Facebook Page</a>
-                <a class="dropdown-item twitter-follow-button" href="//twitter.com/aatfus" target="_blank" id="gl2" data-show-count="false" onmouseover="ehandler(event,menuitem2);">Follow @aatfus</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
-                <a class="dropdown-item" href="//plus.google.com/+AatfUsa" target="_blank" id="gl3" onmouseover="ehandler(event,menuitem2);">Google Plus Page</a>
-                <a class="dropdown-item" href="//www.youtube.com/user/aatfus" target="_blank" id="gl4" onmouseover="ehandler(event,menuitem2);">YouTube Page</a>
-                <a class="dropdown-item" href="//www.linkedin.com/groups/Asian-Arts-Talents-Foundation-6620148" target="_blank" id="gl5" onmouseover="ehandler(event,menuitem2);">LinkedIn Group Page</a>
-                <a class="dropdown-item" href="//www.linkedin.com/company/asian-arts-talents-foundation" target="_blank" id="gl6" onmouseover="ehandler(event,menuitem2);">LinkedIn Company Page</a>
+                <a class="dropdown-item" href="//www.youtube.com/user/aatfus" target="_blank" id="gl4" onmouseover="ehandler(event,menuitem2);">YouTube</a>
+                <a class="dropdown-item" href="//www.linkedin.com/groups/Asian-Arts-Talents-Foundation-6620148" target="_blank" id="gl5" onmouseover="ehandler(event,menuitem2);">LinkedIn Group</a>
+                <a class="dropdown-item" href="//www.linkedin.com/company/asian-arts-talents-foundation" target="_blank" id="gl6" onmouseover="ehandler(event,menuitem2);">LinkedIn Company</a>
               </div>
             </li>
           </ul>
