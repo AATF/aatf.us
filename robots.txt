@@ -1,5 +1,2 @@
-# robots.txt file for AATF
-
 User-agent: *
-
-Disallow:
+Allow: /

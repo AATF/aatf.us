@@ -11,16 +11,18 @@ include_once('header.php');
   <h3>Discord</h3>
   <p><a href="https://discord.gg/fS2wzqP52Y">Join the server!</a></p>
 
-  <h3>General Information</h3>
+  <h3>E-mail</h3>
+
+  <h4>General Information</h4>
   <p><a href="mailto:info@aatf.us">info@aatf.us</a></p>
 
-  <h3>Performance Information</h3>
+  <h4>Performance Information</h4>
   <p><a href="mailto:performance@aatf.us">performance@aatf.us</a></p>
 
-  <h3>Scholarship Information</h3>
+  <h4>Scholarship Information</h4>
   <p><a href="mailto:scholarship@aatf.us">scholarship@aatf.us</a></p>
 
-  <h3>Website Issues</h3>
+  <h4>Website Issues</h4>
   <p><a href="mailto:webmaster@aatf.us">webmaster@aatf.us</a></p>
 
   <h3>Telephone</h3>
