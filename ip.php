@@ -1,3 +1,3 @@
 <?php
-print($_SERVER["HTTP_X_FORWARDED_FOR"]);
+print(explode(",", $_SERVER["HTTP_X_FORWARDED_FOR"])[0]);
 ?>
