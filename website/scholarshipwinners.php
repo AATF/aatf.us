@@ -48,15 +48,21 @@ if ($scholarshipwinnershandle) {
     <div class="col-md-4">
       <h2><?php print $year ?> Scholarship Winners</h2>
       <?php
-              foreach ($people as $name => $data) {
+              foreach ($people as $orig_name => $data) {
                   $display = $data['display'];
                   $place = $data['place'];
                   $filename = $data['filename'];
 
+                  $name = mb_convert_case($orig_name, MB_CASE_TITLE, "UTF-8");
+
                   $pdf_name = "$year-" . str_replace(' ', '', $name) . ".pdf";
                   $scholarship_winners_dir = "scholarshipwinners_files";
 
-                  $begin_text = "<p>" . ordinal($place) . " Place - ";
+                  if ($place == "merit") {
+                      $begin_text = "<p>Merit - ";
+                  } else {
+                      $begin_text = "<p>" . ordinal($place) . " Place - ";
+                  };
 
                   $print_name = "";
                   $found_file = false;
