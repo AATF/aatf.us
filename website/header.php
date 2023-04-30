@@ -10,15 +10,15 @@ include_once('functions.php');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Asian Arts Talents Foundation (AATF)">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="/images/favicon.png">
+  <link rel="shortcut icon" href="//<?php print $cdn_url; ?>/images/favicon.png">
 
   <title>Asian Arts Talents Foundation - <?php global $title; print $title ?></title>
 
   <!-- Bootstrap core CSS -->
-  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//<?php print $cdn_url; ?>/assets/css/bootstrap.min.css" rel="stylesheet">
   <!-- custom styles -->
-  <link href="/assets/css/custom.css" rel="stylesheet">
-  <link href="/assets/css/jssor.css" rel="stylesheet">
+  <link href="//<?php print $cdn_url; ?>/assets/css/custom.css" rel="stylesheet">
+  <link href="//<?php print $cdn_url; ?>/assets/css/jssor.css" rel="stylesheet">
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->

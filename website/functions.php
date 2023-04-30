@@ -1,4 +1,8 @@
 <?php
+$site_version = file_get_contents("VERSION");
+
+$cdn_url = "cdn.aatf.us";
+
 $current_year = date("Y");
 $current_month = date("F");
 
@@ -7,10 +11,9 @@ global $current_month;
 global $extra_head;
 
 $activitiesfile = $current_year . "-activities.txt";
-$activitiesarr = file($activitiesfile, FILE_SKIP_EMPTY_LINES);
+$activitiesarr = file_get_contents("https://" . $cdn_url . "/" . $activitiesfile);
 
-$scholarshipwinnersfile = "scholarshipwinners_files/scholarshipwinners.txt";
-$scholarshipwinnershandle = @fopen($scholarshipwinnersfile, "r");
+$scholarshipwinnershandle = file_get_contents("https://" . $cdn_url . "/scholarshipwinners_files/scholarshipwinners.txt");
 
 function format_date($date, $format = null) {
     if ($format) {
