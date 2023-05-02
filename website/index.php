@@ -23,35 +23,11 @@ $height = round($width / 1.5);
               <!-- Slides Container -->
               <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: <?php print $width ?>px; height: <?php print $height ?>px; overflow: hidden;">
 <?php
-function flatten(array $array) {
-    $return = array();
-
-    array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
-
-    return $return;
-}
-function recurse_dir($dirname) {
-    $dir_contents = scandir($dirname);
-    foreach ($dir_contents as $orig_dir_or_file) {
-        if (!in_array($orig_dir_or_file, [".", ".."])) {
-            $dir_or_file = $dirname . DIRECTORY_SEPARATOR . $orig_dir_or_file;
-
-            if (is_dir($dir_or_file)) {
-                $arr[] = recurse_dir($dir_or_file);
-            } else {
-                $arr[] = $dir_or_file;
-            };
-        };
-    };
-
-    return flatten($arr);
-};
-
 $pattern = "/(\.jpg$)|(\.png$)|(\.jpeg$)|(\.gif$)/"; // valid image extensions
 $dirname = "images";
 $count = 0;
 
-$files = recurse_dir($dirname, $files);
+$files = get_image_files();
 foreach ($files as $file) {
   if (preg_match($pattern, $file)) { // if this file is a valid image
     $slide = "slide" . $count;
@@ -87,7 +63,7 @@ foreach ($files as $file) {
       <div class="container marketing">
         <div class="row featurette">
           <div class="col-md-5">
-              <img class="featurette-image img-responsive" src="images/aatflogo-bw-transparent.png" alt="AATF Logo">
+            <img class="featurette-image img-responsive" src="//<?php print $cdn_url; ?>/images/aatflogo-bw-transparent.png" alt="AATF Logo">
           </div>
           <div class="col-md-7">
             <h2 class="featurette-heading">Purpose</h2>

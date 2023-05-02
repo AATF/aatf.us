@@ -18,7 +18,7 @@ include_once('header.php');
     <h1><?php print $title ?></h1>
   </div>
 
-  <p><a href="/donationform.pdf" target="_blank" class="capsule">Donation Form</a></p>
+  <p><a href="//<?php print $cdn_url; ?>/donationform.pdf" target="_blank" class="capsule">Donation Form</a></p>
 
   <h3>Online Donations</h3>
   <p><a href="https://www.patreon.com/bePatron?u=5695932" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></p>

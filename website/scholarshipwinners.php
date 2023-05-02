@@ -1,5 +1,6 @@
 <?php
 $title = 'Scholarship Winners';
+
 include_once('header.php');
 ?>
 
@@ -75,7 +76,7 @@ if ($scholarshipwinnershandle) {
                   };
 
                   if ($display || $found_file) {
-                    print $begin_text .  "<a href=\"/$scholarship_winners_dir/$print_name\">$name</a></p>";
+                    print $begin_text .  "<a href=\"//$cdn_url/$scholarship_winners_dir/$print_name\">$name</a></p>";
                   } else {
                     print $begin_text . "$name</p>";
                   };

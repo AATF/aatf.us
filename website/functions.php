@@ -1,5 +1,16 @@
 <?php
-$site_version = file_get_contents("VERSION");
+require "vendor/autoload.php";
+
+use Aws\S3\S3Client;
+
+$sharedConfig = [
+    "region" => "us-west-2",
+    "version" => "latest",
+];
+$sdk = new Aws\Sdk($sharedConfig);
+//$s3 = $sdk->createS3();
+
+$site_version = trim(file_get_contents("VERSION"));
 
 $cdn_url = "cdn.aatf.us";
 
@@ -11,7 +22,7 @@ global $current_month;
 global $extra_head;
 
 $activitiesfile = $current_year . "-activities.txt";
-$activitiesarr = file_get_contents("https://" . $cdn_url . "/" . $activitiesfile);
+$activitiesarr = file("https://" . $cdn_url . "/" . $activitiesfile);
 
 $scholarshipwinnershandle = file_get_contents("https://" . $cdn_url . "/scholarshipwinners_files/scholarshipwinners.txt");
 
@@ -39,4 +50,44 @@ function ordinal($num) {
     }
     return $num . $suffix;
 }
+
+function flatten(array $array) {
+    $return = array();
+
+    array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
+
+    return $return;
+}
+
+function get_s3_key($o) {
+    return $o->Key;
+}
+
+function get_image_files() {
+//    $objects = $s3->listObjectsV2([
+//        "Bucket" => "aatf-us",
+//        "MaxKeys" => 1000,
+//    ])->Contents;
+//    $keys = array_map("get_s3_key", $objects);
+//    print($keys);
+
+    return ["//" . $cdn_url . "/images/2005-dance-festival/2005aatffrdfPicture12.jpg"];
+}
+
+function recurse_dir($dirname) {
+    $dir_contents = scandir($dirname);
+    foreach ($dir_contents as $orig_dir_or_file) {
+        if (!in_array($orig_dir_or_file, [".", ".."])) {
+            $dir_or_file = $dirname . DIRECTORY_SEPARATOR . $orig_dir_or_file;
+
+            if (is_dir($dir_or_file)) {
+                $arr[] = recurse_dir($dir_or_file);
+            } else {
+                $arr[] = $dir_or_file;
+            };
+        };
+    };
+
+    return flatten($arr);
+};
 ?>

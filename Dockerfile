@@ -1,15 +1,23 @@
 FROM amazonlinux:2023
 
+WORKDIR /website
+
 RUN yum install --assumeyes \
+  git \
   net-tools \
   nginx \
+  php8.1-cli \
   php8.1-fpm \
-  procps
+  procps \
+  wget
 
 RUN mkdir /run/php-fpm/
 
-COPY website/ /website/
 COPY files/ /
+
+RUN /install-composer && composer require aws/aws-sdk-php
+
+COPY website/ /website/
 
 EXPOSE 80
 

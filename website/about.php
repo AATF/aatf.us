@@ -8,7 +8,7 @@ include_once('header.php');
     <h1><?php print $title ?></h1>
   </div>
 
-  <img width="142" height="182" src="/images/image002.gif" alt="image002" />
+  <img width="142" height="182" src="//<?php print $cdn_url; ?>/images/image002.gif" alt="image002" />
   <h3>AATF &mdash; Yen Yen Dancing Group</h3>
 
   <h3>Artistic Director and Choreographer: Donna Chen and Ling-Mei Lein</h3>
@@ -21,7 +21,7 @@ include_once('header.php');
 
   <p>Instruction Donna Chen and Ling-Mei Lein both are certified instructors of the Chinese Classification Examination Training Certificate Program of the China Beijing Dancing College.  The curriculum of Yen Yen is designed to teach students in 3 levels, based on their skills: children, teenagers and adults.</p>
 
-  <img width="210" height="140" src="/images/image004.gif" alt="image004" />
+  <img width="210" height="140" src="//<?php print $cdn_url; ?>/images/image004.gif" alt="image004" />
 
   <p class="text-center">Our Mission:</p>
   <ul>
