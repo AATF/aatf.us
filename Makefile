@@ -6,6 +6,7 @@ REGISTRY_URL = public.ecr.aws/e3k2e0k8
 all: build upload
 
 build:
+	cp VERSION website/
 	docker build --tag $(TAG) .
 
 upload:

@@ -80,6 +80,14 @@ foreach ($files as $file) {
         </div>
 
         <hr class="featurette-divider">
+<?php
+if (file_exists("banner.html")) {
+    include_once "banner.html";
+?>
+        <hr class="featurette-divider">
+<?php
+}
+?>
 
         <div class="row featurette">
           <div class="col-md-7">
