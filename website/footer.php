@@ -21,7 +21,7 @@
   <?php
   };
   ?>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="//<?php print $cdn_url; ?>/assets/js/bootstrap.min.js"></script>
 
   <!-- Google Analytics -->
   <script>
