@@ -14,6 +14,6 @@ upload:
 	docker push $(REGISTRY_URL)/$(TAG)
 
 run: build
-	docker run -p 127.0.0.1:60000:80 -it --entrypoint /bin/bash $(TAG)
+	docker run -p 60000:80 -it --entrypoint /bin/bash $(TAG)
 
 test: run

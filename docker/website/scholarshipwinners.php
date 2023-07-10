@@ -12,6 +12,9 @@ function place($place) {
 
     return $place_text;
 };
+function convert_name($orig_name) {
+    return mb_convert_case($orig_name, MB_CASE_TITLE, "UTF-8");
+};
 ?>
 
 <?php
@@ -37,7 +40,7 @@ if ($scholarshipwinnershandle) {
     <?php
             foreach ($winners[$current_year - 1] as $name => $data) {
     ?>
-    <p><?php print place($data['place']) . " - $name" ?> <?php if ($data['school']) { ?>(<?php print $data['school'] ?>)<?php } ?></p>
+    <p><?php print place($data['place']) . " - " . convert_name($name) ?> <?php if ($data['school']) { ?>(<?php print $data['school'] ?>)<?php } ?></p>
     <?php
             }
         }
@@ -64,7 +67,7 @@ if ($scholarshipwinnershandle) {
                   $place = $data['place'];
                   $filename = $data['filename'];
 
-                  $name = mb_convert_case($orig_name, MB_CASE_TITLE, "UTF-8");
+                  $name = convert_name($orig_name);
 
                   $pdf_name = "$year-" . str_replace(' ', '', $name) . ".pdf";
                   $scholarship_winners_dir = "scholarshipwinners_files";

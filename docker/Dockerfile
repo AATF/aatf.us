@@ -8,6 +8,7 @@ RUN yum install --assumeyes \
   nginx \
   php8.1-cli \
   php8.1-fpm \
+  php8.1-mbstring \
   procps \
   vim \
   wget
