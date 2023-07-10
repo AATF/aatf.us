@@ -2,12 +2,22 @@
 $title = 'Scholarship Winners';
 
 include_once('header.php');
+
+function place($place) {
+    if (strtolower($place) == "merit") {
+      $place_text = "Merit";
+    } else {
+      $place_text = ordinal($place) . " Place";
+    };
+
+    return $place_text;
+};
 ?>
 
 <?php
 $winners = [];
 if ($scholarshipwinnershandle) {
-    while (($buffer = fgets($scholarshipwinnershandle)) != false) {
+    foreach ($scholarshipwinnershandle as $buffer) {
         $buffer = trim($buffer);
         if ((substr($buffer, 0, 1) != "#") && ($buffer != "")) {
             list($year, $place, $name, $school, $display, $filename) = preg_split('/:/', $buffer);
@@ -27,7 +37,7 @@ if ($scholarshipwinnershandle) {
     <?php
             foreach ($winners[$current_year - 1] as $name => $data) {
     ?>
-    <p><?php print ordinal($data['place']); ?> Place - <?php print $name; ?> <?php if ($data['school']) { ?>(<?php print $data['school'] ?>)<?php } ?> </p>
+    <p><?php print place($data['place']) . " - $name" ?> <?php if ($data['school']) { ?>(<?php print $data['school'] ?>)<?php } ?></p>
     <?php
             }
         }
@@ -59,12 +69,6 @@ if ($scholarshipwinnershandle) {
                   $pdf_name = "$year-" . str_replace(' ', '', $name) . ".pdf";
                   $scholarship_winners_dir = "scholarshipwinners_files";
 
-                  if ($place == "merit") {
-                      $begin_text = "<p>Merit - ";
-                  } else {
-                      $begin_text = "<p>" . ordinal($place) . " Place - ";
-                  };
-
                   $print_name = "";
                   $found_file = false;
                   if (file_exists("$scholarship_winners_dir/$pdf_name")) {
@@ -75,10 +79,11 @@ if ($scholarshipwinnershandle) {
                       $found_file = true;
                   };
 
+                  $begin_text = place($place);
                   if ($display || $found_file) {
-                    print $begin_text .  "<a href=\"//$cdn_url/$scholarship_winners_dir/$print_name\">$name</a></p>";
+                    print "<p>$begin_text - <a href=\"//$cdn_url/$scholarship_winners_dir/$print_name\">$name</a></p>";
                   } else {
-                    print $begin_text . "$name</p>";
+                    print "<p>$begin_text - $name</p>";
                   };
               };
       ?>

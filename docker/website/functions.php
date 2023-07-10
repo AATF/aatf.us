@@ -24,7 +24,7 @@ global $extra_head;
 $activitiesfile = $current_year . "-activities.txt";
 $activitiesarr = file("https://" . $cdn_url . "/" . $activitiesfile);
 
-$scholarshipwinnershandle = file_get_contents("https://" . $cdn_url . "/scholarshipwinners_files/scholarshipwinners.txt");
+$scholarshipwinnershandle = file("https://" . $cdn_url . "/scholarshipwinners_files/scholarshipwinners.txt");
 
 function format_date($date, $format = null) {
     if ($format) {
@@ -36,6 +36,8 @@ function format_date($date, $format = null) {
 }
 
 function ordinal($num) {
+    $num = (int) $num;
+
     $ones = $num % 10;
     $tens = floor($num / 10) % 10;
     if ($tens == 1) {
@@ -48,6 +50,7 @@ function ordinal($num) {
             default : $suffix = "th";
         }
     }
+
     return $num . $suffix;
 }
 

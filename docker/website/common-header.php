@@ -26,4 +26,16 @@ $dropdown_links = [
     "//www.linkedin.com/company/asian-arts-talents-foundation" => "LinkedIn Company",
 ];
 
+$descriptions = [
+    "亞裔才藝基金會",
+    "AATF",
+    "Asian Arts Talents Foundation",
+    "Asian",
+    "Asian Arts",
+    "Asian Arts Talents",
+    "Foundation",
+    "Talent",
+    "Dance",
+];
+
 include_once "common/header.php";

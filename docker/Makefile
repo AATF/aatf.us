@@ -6,7 +6,6 @@ REGISTRY_URL = public.ecr.aws/e3k2e0k8
 all: build upload
 
 build:
-	cp VERSION website/
 	docker build --tag $(TAG) .
 
 upload:
@@ -15,4 +14,6 @@ upload:
 	docker push $(REGISTRY_URL)/$(TAG)
 
 run: build
-	docker run -it --entrypoint /bin/bash $(TAG)
+	docker run -p 127.0.0.1:60000:80 -it --entrypoint /bin/bash $(TAG)
+
+test: run

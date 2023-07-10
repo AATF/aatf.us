@@ -9,6 +9,7 @@ RUN yum install --assumeyes \
   php8.1-cli \
   php8.1-fpm \
   procps \
+  vim \
   wget
 
 RUN mkdir /run/php-fpm/
@@ -18,6 +19,7 @@ COPY files/ /
 RUN /install-composer && composer require aws/aws-sdk-php
 
 COPY website/ /website/
+COPY VERSION /website/
 
 EXPOSE 80
 
