@@ -8,11 +8,21 @@ include_once('header.php');
     <h1><?php print $title ?></h1>
   </div>
 
-  <p><a href="//<?php print $cdn_url; ?>/ScholarshipRequirements.pdf" target="_blank">Scholarship Requirements</a></p>
-
-  <p><a href="//<?php print $cdn_url; ?>/ScholarshipApplication.pdf" target="_blank">Scholarship Application</a></p>
-
-  <p><a href="//<?php print $cdn_url; ?>/EnrollmentForm.pdf" target="_blank">Enrollment Form</a></p>
+<?php
+$links = [
+  "Scholarship Requirements" => "ScholarshipRequirements.pdf",
+  "Scholarship Application" => "ScholarshipApplication.pdf",
+  "Enrollment Form" => "EnrollmentForm.pdf",
+  "Adult class registration" => "AATF_AACC_Registration_Form_ADULT_CLASS_v2024_05.pdf",
+  "weekend adult class registration" => "AATF_AACC_Registration_Form_SATURDAY_v2024_05.pdf",
+  "summer camp registration" => "AATF_AACC_Registration_Form_SUMMER_CAMP_v2024_05.pdf",
+];
+foreach($links as $text => $url) {
+?>
+  <p><a href="//<?php print $cdn_url; ?>/<?php print $link ?>" target="_blank"><?php print $text ?></a></p>
 </div>
 
-<?php include_once('footer.php'); ?>
+<?php
+}
+    include_once('footer.php');
+?>

@@ -1,19 +1,20 @@
+DOCKER := docker
+
 IMAGE = $(file < IMAGE)
 TAG = $(IMAGE):$(file < VERSION)
 
-REGISTRY_URL = public.ecr.aws/e3k2e0k8
+REGISTRY_URL = aatf/aatf.us
 
 all: build upload
 
 build:
-	docker build --tag $(TAG) .
+	$(DOCKER) build --tag $(TAG) .
 
 upload:
-	docker tag $(TAG) $(REGISTRY_URL)/$(TAG)
-	aws --profile aatf ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $(REGISTRY_URL)
-	docker push $(REGISTRY_URL)/$(TAG)
+	$(DOCKER) tag $(TAG) $(REGISTRY_URL):$(TAG)
+	$(DOCKER) push $(REGISTRY_URL):$(TAG)
 
 run: build
-	docker run -p 60000:80 -it --entrypoint /bin/bash $(TAG)
+	$(DOCKER) run -p 60000:80 -it --entrypoint /bin/bash $(TAG)
 
 test: run
