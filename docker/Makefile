@@ -15,6 +15,6 @@ upload:
 	$(DOCKER) push $(REGISTRY_URL)/$(TAG)
 
 run: build
-	$(DOCKER) run -p 60000:80 -it --entrypoint /bin/bash $(TAG)
+	$(DOCKER) run -p 60000:8080 -it --entrypoint /bin/bash $(TAG)
 
 test: run

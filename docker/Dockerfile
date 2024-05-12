@@ -27,7 +27,11 @@ RUN mkdir /run/php-fpm/ /var/run/nginx
 RUN /install-composer \
   && composer require aws/aws-sdk-php
 
-RUN chown --recursive $app_user:$app_user /var/log/php-fpm /var/log/nginx /var/run/nginx
+RUN chown --recursive $app_user:$app_user \
+  /var/log/php-fpm \
+  /var/log/nginx \
+  /var/run/nginx \
+  /var/run/php-fpm
 
 COPY files/ /
 COPY website/ /website/
