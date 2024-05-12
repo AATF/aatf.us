@@ -23,11 +23,11 @@ RUN yum install --assumeyes \
 
 COPY files/install-composer /
 
-RUN mkdir /run/php-fpm/ \
-  && /install-composer \
+RUN mkdir /run/php-fpm/ /var/run/nginx
+RUN /install-composer \
   && composer require aws/aws-sdk-php
 
-RUN chown --recursive $app_user:$app_user /var/log/php-fpm /var/log/nginx
+RUN chown --recursive $app_user:$app_user /var/log/php-fpm /var/log/nginx /var/run/nginx
 
 COPY files/ /
 COPY website/ /website/
