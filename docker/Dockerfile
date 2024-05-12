@@ -33,7 +33,7 @@ COPY files/ /
 COPY website/ /website/
 COPY VERSION /website/
 
-EXPOSE 80
+EXPOSE 8080
 
 USER $app_uid:$app_gid
 
