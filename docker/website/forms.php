@@ -20,9 +20,11 @@ $links = [
 foreach($links as $text => $url) {
 ?>
   <p><a href="//<?php print $cdn_url; ?>/<?php print $link ?>" target="_blank"><?php print $text ?></a></p>
+<?php
+}
+?>
 </div>
 
 <?php
-}
     include_once('footer.php');
 ?>
