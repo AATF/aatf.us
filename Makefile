@@ -8,7 +8,7 @@ REGISTRY_URL = aatf
 all: build upload
 
 build:
-	$(DOCKER) build --tag $(TAG) .
+	$(DOCKER) build --file docker/Dockerfile --tag $(TAG) .
 
 upload:
 	$(DOCKER) tag $(TAG) $(REGISTRY_URL)/$(TAG)
