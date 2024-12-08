@@ -4,13 +4,12 @@ ARG app_user=nginx
 ARG app_uid=1111
 ARG app_gid=1111
 
-WORKDIR /website
-
 RUN yum install --assumeyes net-tools \
   && groupadd --system --gid $app_gid $app_user \
   && useradd --system --uid $app_uid --home-dir /var/lib/nginx --gid $app_user $app_user
 
 RUN yum install --assumeyes \
+  bind-utils \
   git \
   net-tools \
   nginx \
@@ -21,7 +20,9 @@ RUN yum install --assumeyes \
   vim \
   wget
 
-COPY files/install-composer /
+WORKDIR /website
+
+COPY docker/files/install-composer /
 
 RUN mkdir /run/php-fpm/ /var/run/nginx
 RUN /install-composer \
@@ -33,9 +34,9 @@ RUN chown --recursive $app_user:$app_user \
   /var/run/nginx \
   /var/run/php-fpm
 
-COPY files/ /
+COPY docker/files/ /
 COPY website/ /website/
-COPY VERSION /website/
+COPY docker/VERSION /website/
 
 EXPOSE 8080
 
