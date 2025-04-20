@@ -9,6 +9,9 @@
 
 name: Deploy to Amazon Eks
 
+concurrency:
+  group: deploy
+  
 on:
   workflow_run:
     workflows: [build image]
