@@ -23,6 +23,7 @@ on:
       
 permissions:
   id-token: write # required for requesting the JWT
+  contents: read
   
 jobs:
   deploy:
