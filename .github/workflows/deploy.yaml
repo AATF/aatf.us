@@ -34,7 +34,7 @@ jobs:
     steps:
       - run: |
           ID_TOKEN=$(curl -s -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=api://demo" | jq -r .value)
-          echo $ID_TOKEN | base64
+          echo $ID_TOKEN
           
   deploy:
     name: Deploy
@@ -50,7 +50,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::152778659453:role/github-actions
           role-session-name: deploy
-          aws-region: us-east-1
+          aws-region: us-west-2
           
       - name: deploy
         run: |
