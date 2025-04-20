@@ -18,3 +18,6 @@ run: build
 	$(DOCKER) run -p 60000:8080 -it --entrypoint /bin/bash $(TAG)
 
 test: run
+
+deploy:
+	echo do it
