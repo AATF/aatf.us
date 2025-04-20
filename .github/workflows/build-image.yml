@@ -22,5 +22,4 @@ jobs:
         
     - name: Build the Docker image
       run: |
-        cd docker
         make
