@@ -24,13 +24,6 @@ on:
 permissions:
   id-token: write # required for requesting the JWT
   
-env:
-  AWS_REGION: us-west-2                   # set this to your preferred AWS region, e.g. us-west-1
-  ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # path to your Amazon ECS task definition file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: MY_CONTAINER_NAME # name of the container in the containerDefinitions section of your task definition
-
 jobs:
   deploy:
     name: Deploy
@@ -44,9 +37,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@main
         with:
-          role-to-assume: arn:aws:iam::1234567890:role/example-role
-          role-session-name: githubaction-aatf
-          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: arn:aws:iam::152778659453:role/github-actions
+          role-session-name: deploy
+          aws-region: us-west-2
 
       - name: deploy
         run: |
