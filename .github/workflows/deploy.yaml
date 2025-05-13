@@ -43,7 +43,6 @@ jobs:
           role-session-name: deploy
           aws-region: us-west-2
           unset-current-credentials: true
-          role-chaining: true
           
       - name: deploy
         run: |
