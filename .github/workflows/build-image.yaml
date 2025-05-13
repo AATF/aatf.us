@@ -6,7 +6,11 @@ on:
     paths:
       - 'docker/**'
   workflow_dispatch:
-
+  
+permissions:
+  id-token: write # required for requesting the JWT
+  contents: read
+  
 jobs:
   build:
     runs-on: ubuntu-latest
