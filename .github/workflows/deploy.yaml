@@ -42,6 +42,7 @@ jobs:
           role-to-assume: arn:aws:iam::152778659453:role/github-actions
           role-session-name: deploy
           aws-region: us-west-2
+          unset-current-credentials: true
           
       - name: deploy
         run: |
