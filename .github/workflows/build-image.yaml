@@ -2,9 +2,11 @@ name: build image
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - "main"
     paths:
       - 'docker/**'
+      - 'website/**'
   workflow_dispatch:
   
 permissions:
