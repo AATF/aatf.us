@@ -20,4 +20,4 @@ run: build
 test: run
 
 deploy:
-	echo do it
+	go run ./scripts/deploy.go
