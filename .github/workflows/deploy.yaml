@@ -7,7 +7,7 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Deploy to Amazon Eks
+name: Deploy to EKS
 
 concurrency:
   group: deploy
@@ -21,12 +21,15 @@ on:
   push:
     branches:
       - main
-      
+
 permissions:
   id-token: write # required for requesting the JWT
   contents: read
   
-jobs:          
+env:
+  AWS_REGION: us-west-2                   # set this to your preferred AWS region, e.g. us-west-1
+
+jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
@@ -41,7 +44,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::152778659453:role/github-actions
           role-session-name: deploy
-          aws-region: us-west-2
+          aws-region: ${{ env.AWS_REGION }}
           unset-current-credentials: true
           
       - name: deploy
