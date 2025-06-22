@@ -25,6 +25,9 @@ include_once('header.php');
   <h4>Website Issues</h4>
   <p><a href="mailto:webmaster@aatf.us">webmaster@aatf.us</a></p>
 
+  <h4>Security Disclosures/Issues</h4>
+  <p><a href="mailto:security@aatf.us">security@aatf.us</a></p>
+
   <h3>Telephone</h3>
   <p>(626) 309-9274</p>
   <p>(626) 975-3152</p>
