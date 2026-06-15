@@ -1,7 +1,7 @@
 DOCKER := docker
 
 IMAGE = $(file < docker/IMAGE)
-TAG = $(IMAGE):$(file < docker/VERSION)
+TAG = $(IMAGE):$(file < VERSION)
 
 REGISTRY_URL = aatf
 

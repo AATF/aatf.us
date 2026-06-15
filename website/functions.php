@@ -7,7 +7,7 @@ $sharedConfig = [
     "region" => "us-west-2",
     "version" => "latest",
 ];
-$sdk = new Aws\Sdk($sharedConfig);
+//$sdk = new Aws\Sdk($sharedConfig);
 //$s3 = $sdk->createS3();
 
 $site_version = trim(file_get_contents("VERSION"));

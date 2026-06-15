@@ -39,7 +39,7 @@ RUN chown --recursive $app_user:$app_user \
 
 COPY docker/files/ /
 COPY website/ /website/
-COPY docker/VERSION /website/
+COPY VERSION /website/
 
 EXPOSE 8080
 

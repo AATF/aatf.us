@@ -16,7 +16,7 @@ func main() {
 		os.Exit(1)
 	}
 	dir := filepath.Dir(filename)
-	versionPath := filepath.Join(dir, "..", "docker", "VERSION")
+	versionPath := filepath.Join(dir, "..", "VERSION")
 
 	content, err := os.ReadFile(versionPath)
 	if err != nil {
