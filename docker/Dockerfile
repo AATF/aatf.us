@@ -4,6 +4,9 @@ ARG app_user=nginx
 ARG app_uid=1111
 ARG app_gid=1111
 
+RUN groupadd --system --gid $app_gid $app_user \
+  && useradd --system --uid $app_uid --home-dir /var/lib/nginx --gid $app_user $app_user
+
 RUN yum install --assumeyes \
   7zip \
   bind-utils \
@@ -17,9 +20,6 @@ RUN yum install --assumeyes \
   vim \
   wget \
   zip
-
-RUN groupadd --system --gid $app_gid $app_user \
-  && useradd --system --uid $app_uid --home-dir /var/lib/nginx --gid $app_user $app_user
 
 WORKDIR /website
 
