@@ -11,9 +11,9 @@ build:
 	$(DOCKER) build --file docker/Dockerfile --tag $(TAG) .
 
 upload:
-	$(DOCKER) tag $(TAG) $(REGISTRY_URL)/latest
+	$(DOCKER) tag $(TAG) $(REGISTRY_URL)/$(IMAGE):latest
 	$(DOCKER) tag $(TAG) $(REGISTRY_URL)/$(TAG)
-	$(DOCKER) push $(REGISTRY_URL)/latest
+	$(DOCKER) push $(REGISTRY_URL)/$(IMAGE):latest
 	$(DOCKER) push $(REGISTRY_URL)/$(TAG)
 
 run: build
